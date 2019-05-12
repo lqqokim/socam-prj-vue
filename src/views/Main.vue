@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <v-progress-linear class="progress" :indeterminate="true" height="5"></v-progress-linear>
     <Toolbar/>
 
     <v-parallax
@@ -123,4 +124,9 @@ export default {
   position: absolute;
   bottom: 0;
 }
+
+.progress {
+  margin: 0;
+}
+
 </style>

@@ -12,12 +12,13 @@
       <!-- <v-toolbar-title class="white--text">Software Campus</v-toolbar-title> -->
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat to="/home">Home</v-btn>
         <v-btn flat to="/about">About</v-btn>
-        <v-btn flat to="/about">Community</v-btn>
-        <v-btn flat to="/about">Event</v-btn>
-        <v-btn flat to="/about">Source Store</v-btn>
-        <v-btn flat to="/about">Notice</v-btn>
-        <v-btn flat to="/about">My Page</v-btn>
+        <v-btn flat to="/">Community</v-btn>
+        <v-btn flat to="/">Event</v-btn>
+        <v-btn flat to="/">Source Store</v-btn>
+        <v-btn flat to="/">Notice</v-btn>
+        <v-btn flat to="/">My Page</v-btn>
       </v-toolbar-items>
     </template>
 

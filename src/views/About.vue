@@ -1,5 +1,28 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <v-app light>
+    <v-progress-linear :indeterminate="true" class="ma-0" height="5"></v-progress-linear>
+    <Toolbar/>
+    <v-content>
+      <section>
+        This is a about page
+      </section>
+    </v-content>
+    <Footer/>
+  </v-app>
 </template>
+
+<script>
+import Toolbar from "./../components/Toolbar";
+import Footer from "./../components/Footer";
+
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    Toolbar,
+    Footer
+  }
+};
+</script>
+

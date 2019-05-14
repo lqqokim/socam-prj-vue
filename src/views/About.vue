@@ -1,6 +1,6 @@
 <template>
   <v-app light>
-    <v-progress-linear :indeterminate="true" class="ma-0" height="5"></v-progress-linear>
+    <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear>
     <Toolbar/>
     <v-content>
       <section>

@@ -2,7 +2,7 @@
   <v-app light>
     <!-- <v-progress-linear class="progress" :indeterminate="true" height="5"></v-progress-linear> -->
 
-    <v-progress-linear :indeterminate="true" class="ma-0" height="5"></v-progress-linear>
+    <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear>
 
     <!-- <v-toolbar class="white">
       <v-toolbar-title v-text="title"></v-toolbar-title>

@@ -11,11 +11,11 @@
 
     <v-content>
       <section>
-        <v-parallax :src="getImage('hero.jpeg')" height="400">
+        <v-parallax :src="getImage('hero.jpeg')" height="300">
           <v-layout column align-center justify-center class="white--text">
-            <img :src="getImage('vuetify.png')" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-1 text-xs-center">안녕하세요 소프트웨어 캠퍼스 입니다.</h1>
-            <div class="subheading mb-3 text-xs-center">Powered by Socam</div>
+            <!-- <img :src="getImage('vuetify.png')" alt="Vuetify.js" height="200"> -->
+            <h1 class="white--text mb-2 display-2 text-xs-center">모집중인 모임</h1>
+            <!-- <div class="subheading mb-3 text-xs-center">Powered by Socam</div> -->
             <!-- <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">Get Started</v-btn> -->
           </v-layout>
         </v-parallax>`
@@ -24,13 +24,14 @@
       <section>
         <v-layout column wrap class="my-5" align-center>
           <v-flex xs12 sm4 class="my-3">
-            <div class="text-xs-center">
+            <!-- <div class="text-xs-center">
               <h1 class="font-weight-bold display-1">모집중인 모임</h1>
               <span class="subheading">Cras facilisis mi vitae nunc</span>
-            </div>
+            </div> -->
           </v-flex>
 
-          <GroupList/>
+          <group-list></group-list>
+
         </v-layout>
       </section>
 

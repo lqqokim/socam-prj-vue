@@ -16,9 +16,9 @@
           <v-btn flat to="/home">Home</v-btn>
           <v-btn flat to="/about">About</v-btn>
           <v-btn flat to="/">Community</v-btn>
-          <v-btn flat to="/">Event</v-btn>
+          <!-- <v-btn flat to="/">Event</v-btn> -->
           <v-btn flat to="/">Source Store</v-btn>
-          <v-btn flat to="/">Notice</v-btn>
+          <v-btn flat to="/">모임 개설</v-btn>
           <v-btn flat to="/">My Page</v-btn>
         </v-toolbar-items>
       </template>

@@ -7,7 +7,7 @@
     <img class="logo" src="./../assets/images/socam-logo.png">
     <div class="welcome-msg">
       <h1>HELLO, SOCAM.</h1>
-      <router-link to="/home" class="btn btn-connect">Connect</router-link>
+      <router-link to="/about" class="btn btn-connect">Connect</router-link>
     </div>
   </section>
 </template>

@@ -80,9 +80,14 @@
                 </v-flex>-->
             </v-layout>
         </v-container>
-
+        
         <div class="text-xs-center">
-            <v-pagination v-model="page" :length="6"></v-pagination>
+            <v-pagination
+                v-model="page"
+                :length="4"
+                prev-icon="mdi-menu-left"
+                next-icon="mdi-menu-right"
+            ></v-pagination>
         </div>
     </v-flex>
 </template>

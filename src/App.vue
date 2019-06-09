@@ -1,26 +1,21 @@
 <template>
-  <div id="app">
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>-->
-    <router-view/>
-  </div>
+    <intro-view v-if="$route.path === '/'"/>
+    <main-view v-else/>
 </template>
 
+<script>
+export default {
+    name: 'App',
+    components: {
+        IntroView: () => import('@/views/Intro'),
+        MainView: () => import('@/views/Main')
+    }
+}
+</script>
+
+
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  /* overflow-y: hidden; */
-}
-
-#app {
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #2c3e50;
+    overflow-y: auto;
 }
 </style>

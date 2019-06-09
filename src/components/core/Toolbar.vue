@@ -1,7 +1,5 @@
 <template>
-    <!-- <v-toolbar class="toolbar" dark extended> -->
-    <!-- <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear> -->
-    <v-toolbar class="toolbar" extended>
+    <v-toolbar :flat="$store.state.isScrollTop" app extended>
         <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
         <v-avatar color="grey lighten-4">
             <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
@@ -10,7 +8,7 @@
         <v-toolbar-title class="font-weight-medium display-1">Software Campus</v-toolbar-title>
 
         <v-spacer></v-spacer>
-
+        <!-- 
         <div class="text-xs-center">
             <v-badge left>
                 <template v-slot:badge>
@@ -25,20 +23,17 @@
                 </template>
                 <v-icon large color="grey">mail</v-icon>
             </v-badge>
-        </div>
+        </div>-->
 
         <template v-slot:extension>
             <!-- <v-toolbar-title class="white--text">Software Campus</v-toolbar-title> -->
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
-                <!-- <v-btn flat to="/home">Home</v-btn> -->
                 <v-btn flat to="/about">About</v-btn>
                 <v-btn flat to="/community">Community</v-btn>
-                <!-- <v-btn flat to="/">Event</v-btn> -->
-                <!-- <v-btn flat to="/">Source Store</v-btn> -->
                 <v-btn flat to="/">모임</v-btn>
                 <!-- <v-btn flat to="/">로그인</v-btn>
-                <v-btn flat to="/">회원 가입</v-btn> -->
+                <v-btn flat to="/">회원 가입</v-btn>-->
                 <v-avatar>
                     <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
                 </v-avatar>
@@ -67,8 +62,12 @@
 
 <script>
 export default {
-    // name: 'toolbar'
-}
+    data: () => ({
+        
+    }),
+    created() {},
+    methods: {}
+};
 </script>
 
 <style>

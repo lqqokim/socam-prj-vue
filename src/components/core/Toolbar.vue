@@ -1,5 +1,7 @@
 <template>
-    <v-toolbar :flat="$store.state.isScrollTop" app extended>
+    <!-- <v-toolbar :flat="$store.state.isScrollTop" app extended> -->
+    <v-toolbar :flat="$store.state.isScrollTop" app>
+        <v-toolbar-side-icon class="hidden-md-and-up"/>
         <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
         <v-avatar color="grey lighten-4">
             <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
@@ -8,6 +10,17 @@
         <v-toolbar-title class="font-weight-medium display-1">Software Campus</v-toolbar-title>
 
         <v-spacer></v-spacer>
+
+        <v-toolbar-items class="hidden-sm-and-down">
+            <v-btn flat to="/about">About</v-btn>
+            <v-btn flat to="/community">Community</v-btn>
+            <v-btn flat to="/">모임</v-btn>
+            <!-- <v-btn flat to="/">로그인</v-btn>
+            <v-btn flat to="/">회원 가입</v-btn>-->
+            <v-avatar>
+                <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="John">
+            </v-avatar>
+        </v-toolbar-items>
         <!-- 
         <div class="text-xs-center">
             <v-badge left>
@@ -25,20 +38,19 @@
             </v-badge>
         </div>-->
 
-        <template v-slot:extension>
-            <!-- <v-toolbar-title class="white--text">Software Campus</v-toolbar-title> -->
+        <!-- <template v-slot:extension>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-sm-and-down">
                 <v-btn flat to="/about">About</v-btn>
                 <v-btn flat to="/community">Community</v-btn>
                 <v-btn flat to="/">모임</v-btn>
-                <!-- <v-btn flat to="/">로그인</v-btn>
-                <v-btn flat to="/">회원 가입</v-btn>-->
+                <v-btn flat to="/">로그인</v-btn>
+                <v-btn flat to="/">회원 가입</v-btn>
                 <v-avatar>
                     <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
                 </v-avatar>
 
-                <!-- <v-btn icon>
+                <v-btn icon>
                     <v-icon>search</v-icon>
                 </v-btn>
 
@@ -52,19 +64,15 @@
 
                 <v-btn icon>
                     <v-icon>more_vert</v-icon>
-                </v-btn>-->
+                </v-btn>
             </v-toolbar-items>
-        </template>
-
-        <v-spacer></v-spacer>
+        </template>-->
     </v-toolbar>
 </template>
 
 <script>
 export default {
-    data: () => ({
-        
-    }),
+    data: () => ({}),
     created() {},
     methods: {}
 };

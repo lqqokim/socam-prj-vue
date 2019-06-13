@@ -1,6 +1,7 @@
 <template>
     <v-app id="v-app" light>
-        <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear>
+        <!-- <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear> -->
+       
         <core-toolbar/>
 
         <router-view/>
@@ -12,7 +13,9 @@
 <script>
 export default {
     name: 'App',
-    data: () => ({}),
+    data: () => ({
+        isLoading: true
+    }),
     components: {
         CoreToolbar: () => import('@/components/core/Toolbar'),
         CoreFooter: () => import('@/components/core/Footer')
@@ -21,13 +24,11 @@ export default {
         document.addEventListener('scroll', event => {
             const scrolled = document.scrollingElement.scrollTop;
             if (!scrolled) {
-                console.log('scrolled', scrolled);
                 this.$store.commit('setScroll', true);
                 return;
             }
 
             this.$store.commit('setScroll', false);
-            console.log(this.$store.state);
         });
     }
 };

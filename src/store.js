@@ -5,11 +5,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        isScrollTop: true
+        isScrollTop: true,
+        isApp: false
     },
     mutations: {
         setScroll(state, payload) {
             state.isScrollTop = payload;
+        },
+        setApp(state, payload) {
+            state.isApp = payload;
         }
     }
 })

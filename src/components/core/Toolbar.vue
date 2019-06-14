@@ -6,7 +6,7 @@
         <v-avatar color="grey lighten-4">
             <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
         </v-avatar>
-        <!-- <v-toolbar-title class="white--text font-weight-medium display-2">Software Campus</v-toolbar-title> -->
+        
         <v-toolbar-title class="font-weight-medium display-1">Software Campus</v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -15,8 +15,6 @@
             <v-btn flat to="/about">About</v-btn>
             <v-btn flat to="/community">Community</v-btn>
             <v-btn flat to="/">모임</v-btn>
-            <!-- <v-btn flat to="/">로그인</v-btn>
-            <v-btn flat to="/">회원 가입</v-btn>-->
             <v-avatar>
                 <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="John">
             </v-avatar>

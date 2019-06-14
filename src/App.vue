@@ -10,7 +10,7 @@ export default {
         IntroView: () => import('@/views/Intro'),
         MainView: () => import('@/views/Main')
     }
-}
+};
 </script>
 
 

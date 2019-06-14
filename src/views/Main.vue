@@ -1,7 +1,7 @@
 <template>
     <v-app id="v-app" light>
         <!-- <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear> -->
-       
+
         <core-toolbar/>
 
         <router-view/>

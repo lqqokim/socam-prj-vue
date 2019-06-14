@@ -1,25 +1,25 @@
 <template>
-  <section>
-    <v-footer dark height="auto">
-      <v-card class="flex" flat tile>
-        <v-card-title class="primary lighten-1">
-          <strong class="subheading">Get connected with us on social networks!</strong>
+    <section>
+        <v-footer dark height="auto">
+            <v-card class="flex" flat tile>
+                <v-card-title class="primary lighten-1">
+                    <strong class="subheading">Get connected with us on social networks!</strong>
 
-          <v-spacer></v-spacer>
+                    <v-spacer></v-spacer>
 
-          <v-btn v-for="icon in icons" :key="icon" class="mx-3" dark icon>
-            <v-icon size="24px">{{ icon }}</v-icon>
-          </v-btn>
-        </v-card-title>
+                    <v-btn v-for="icon in icons" :key="icon" class="mx-3" dark icon>
+                        <v-icon size="24px">{{ icon }}</v-icon>
+                    </v-btn>
+                </v-card-title>
 
-        <v-card-actions class="grey darken-3 justify-center">
-          &copy;2018 —
-          <strong>Vuetify</strong>
-        </v-card-actions>
-      </v-card>
-    </v-footer>
+                <v-card-actions class="grey darken-3 justify-center">
+                    &copy;2018 —
+                    <strong>Vuetify</strong>
+                </v-card-actions>
+            </v-card>
+        </v-footer>
 
-    <!-- <v-footer class="footer" dark>
+        <!-- <v-footer class="footer" dark>
       <v-card flat tile class="indigo lighten-1 white--text text-xs-center">
         <v-card-text>
           <v-btn v-for="icon in icons" :key="icon" class="mx-3 white--text" icon>
@@ -38,8 +38,8 @@
           <strong>Vuetify</strong>
         </v-card-text>
       </v-card>
-    </v-footer>-->
-    <!-- <v-footer class="blue darken-2">
+        </v-footer>-->
+        <!-- <v-footer class="blue darken-2">
           <v-layout row wrap align-center>
             <v-flex xs12>
               <div class="white--text ml-3">
@@ -50,22 +50,22 @@
               </div>
             </v-flex>
           </v-layout>
-    </v-footer>-->
-  </section>
+        </v-footer>-->
+    </section>
 </template>
 
 <script>
 export default {
-  data: function() {
-    return {
-      icons: [
-        "fa fa-facebook-official",
-        "fa fa-google-plus-square",
-        "fa fa-instagram"
-      ]
-    };
-  },
-  methods: {}
+    data: function() {
+        return {
+            icons: [
+                'fa fa-facebook-official',
+                'fa fa-google-plus-square',
+                'fa fa-instagram'
+            ]
+        };
+    },
+    methods: {}
 };
 </script>
 

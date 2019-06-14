@@ -73,12 +73,12 @@ export default {
     }),
     methods: {
         getImage(img) {
-            return require(`../assets/images/${img}`)
+            return require(`../assets/images/${img}`);
         }
     },
     components: {
         GroupList: () => import('@/components/GroupList.vue')
     }
-}
+};
 </script>
 

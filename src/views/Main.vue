@@ -1,7 +1,7 @@
 <template>
     <v-app id="v-app" light>
         <!-- <v-progress-linear :indeterminate="true" class="ma-0" height="6"></v-progress-linear> -->
-
+        <CoreNavigationDrawer></CoreNavigationDrawer>
         <core-toolbar/>
 
         <router-view/>
@@ -14,11 +14,12 @@
 export default {
     name: 'App',
     data: () => ({
-        isLoading: true
+        isLoading: true,
     }),
     components: {
         CoreToolbar: () => import('@/components/core/Toolbar'),
-        CoreFooter: () => import('@/components/core/Footer')
+        CoreFooter: () => import('@/components/core/Footer'),
+        CoreNavigationDrawer: () => import('@/components/core/NavigationDrawer')
     },
     mounted() {
         document.addEventListener('scroll', event => {

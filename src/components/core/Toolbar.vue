@@ -1,12 +1,24 @@
 <template>
     <!-- <v-toolbar :flat="$store.state.isScrollTop" app extended> -->
     <v-toolbar :flat="$store.state.isScrollTop" app>
-        <v-toolbar-side-icon class="hidden-md-and-up"/>
-        <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
+        <!-- <v-toolbar-side-icon class="hidden-md-and-up">
+
+        </v-toolbar-side-icon>-->
+        <v-menu class="hidden-md-and-up">
+            <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
+            <v-list>
+                <v-list-tile v-for="item in menu" :key="item.icon">
+                    <v-list-tile-content>
+                        <v-list-tile-title to>{{ item.title }}</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
+            </v-list>
+        </v-menu>
+
         <v-avatar color="grey lighten-4">
             <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
         </v-avatar>
-        
+
         <v-toolbar-title class="font-weight-medium display-1">Software Campus</v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -15,10 +27,11 @@
             <v-btn flat to="/about">About</v-btn>
             <v-btn flat to="/community">Community</v-btn>
             <v-btn flat to="/">모임</v-btn>
-            <v-avatar>
+            <v-avatar class="user-img" @click.stop="drawer = !drawer">
                 <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="John">
             </v-avatar>
         </v-toolbar-items>
+
         <!-- 
         <div class="text-xs-center">
             <v-badge left>
@@ -70,12 +83,27 @@
 
 <script>
 export default {
-    data: () => ({}),
+    data: () => ({
+        menu: [{ title: '' }],
+        drawer: false
+    }),
+    components: {
+        NavagationDrawer: () => import('./NavigationDrawer')
+    },
+    watch: {
+        drawer: function(val) {
+            this.$store.commit('setDrawerOpen', val);
+            console.log('toolbar', val);
+        }
+    },
     created() {},
     methods: {}
 };
 </script>
 
 <style>
+.user-img {
+    cursor: pointer;
+}
 </style>
 

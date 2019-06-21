@@ -41,8 +41,10 @@ export default {
     data() {
         return {
             items: [
-                { title: 'Home', icon: 'dashboard' },
-                { title: 'About', icon: 'question_answer' }
+                { title: '마이페이지', icon: 'dashboard' },
+                { title: '대시보드', icon: 'question_answer' },
+                { title: '쪽지함', icon: 'question_answer' },
+                { title: 'QnA', icon: 'question_answer' }
             ],
             drawer: this.$store.state.isDrawerOpen
         };
@@ -58,8 +60,7 @@ export default {
     },
     computed: {
         adrawer(a) {
-
-            console.log('computed', a)
+            console.log('computed', a);
             return a;
         }
     }

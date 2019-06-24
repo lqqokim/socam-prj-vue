@@ -53,14 +53,12 @@ export default {
         drawer: {
             immediate: false,
             handler: function(newVal) {
-                console.log('drawer handler', newVal);
                 this.$store.commit('setDrawerOpen', newVal);
             }
         }
     },
     computed: {
         adrawer(a) {
-            console.log('computed', a);
             return a;
         }
     }

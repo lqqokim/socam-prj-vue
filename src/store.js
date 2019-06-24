@@ -17,7 +17,6 @@ export default new Vuex.Store({
             state.isApp = payload;
         },
         setDrawerOpen(state, payload) {
-            console.log('payload', payload)
             state.isDrawerOpen = payload;
         }
     },

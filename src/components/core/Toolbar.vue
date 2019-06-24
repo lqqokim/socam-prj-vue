@@ -93,7 +93,6 @@ export default {
     watch: {
         drawer: function(val) {
             this.$store.commit('setDrawerOpen', val);
-            console.log('toolbar', val);
         }
     },
     created() {},
